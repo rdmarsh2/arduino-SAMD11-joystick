@@ -93,14 +93,14 @@ C Array body
 0x09, 0x05, // Usage(Game Pad),
 0xA1, 0x01, // Collection(Application),
     0x09, 0x01, // Usage(Pointer),
-        0xA1, 0x00, // Collection(Physical),
+    0xA1, 0x00, // Collection(Physical),
         0x09, 0x30, // Usage(X),
         0x09, 0x31, // Usage(Y),
         0x15, 0xFF, // Logical Minimum(-1),
         0x25, 0x01, // Logical Maximum(1),
         0x95, 0x02, // Report Count(2),
-        0x75, 0x01, // Report Size(2),
-        0x81, 0x42, // Input(Data, Variable, Absolute, No Null), 
+        0x75, 0x02, // Report Size(2),
+        0x81, 0x02, // Input(Data, Variable, Absolute, No Null), 
     0xC0, // End Collection(),
     0x19, 0x90, // Usage Minimum(D-Pad Up),
     0x29, 0x93, // Usage Maximum(D-Pad Left),
@@ -118,7 +118,7 @@ C Array body
     0x95, 0x01, // Report Count(1),
     0x75, 0x04, // Report Size(4),
     0x81, 0x01, // Input(Constant),
-0xC0, // End Collection,
+0xC0 // End Collection
 ```
 
 ## Report Format
